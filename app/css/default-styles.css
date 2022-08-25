@@ -1,0 +1,135 @@
+/* fonts */
+
+/* reality hyper */
+@font-face {
+    font-family: 'Reality Hyper';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Reality_Hyper_Regular.ttf) format("truetype");
+}
+
+/* butler */
+@font-face {
+    font-family: 'Butler';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/Butler_Medium.otf) format("opentype");
+}
+
+/* lota grotesque */
+@font-face {
+    font-family: 'Lota Grotesque';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Lota_Grotesque_Light.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Lota Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Lota_Grotesque_Regular.otf) format("opentype");
+}
+
+
+/* personal default styles*/
+html {
+    font-size: 12px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: .3s linear;
+}
+
+a:hover {
+    color: #EB4C56;
+}
+
+.page {
+    background: #e5e5e5;
+    color: #000;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 130%;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 0px 80px;
+}
+
+.button__inner {
+    display: flex;
+}
+
+.button {
+    display: flex;
+    text-align: center;
+    padding: 12px 32px;
+    border-radius: 0px;
+    font-size: 1.33rem;
+    line-height: 206%;
+    transition: .3s linear;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.78);
+    cursor: pointer;
+    background: #EB4C56;
+    border: 1px solid transparent
+}
+
+.button:hover {
+    background: #fff;
+    color: #1B1A1F;
+    border: 1px solid #1B1A1F;
+}
+
+.button--simple{
+    background: #fff;
+    color: #1B1A1F;
+    border: 1px solid #1B1A1F;
+    font-family: 'Lota Grotesque';
+    font-size: 1.67rem;
+    line-height: 165%;
+}
+
+.form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.textform {
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #191919;
+    border: 1px solid #191919;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 120%;
+    padding: 28px 20px;
+    margin-top: 20px;
+}
+
+
+
+.textform::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.text{
+    font-family: 'Lota Grotesque';
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 150%;
+}

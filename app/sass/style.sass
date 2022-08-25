@@ -1,0 +1,175 @@
+$fontReality: "Reality Hyper"
+$fontButler:  "Butler"
+$fontLota:    "Lota Grotesque"
+
+$colorDark: #1B1A1F
+$colorRed:  #EB4C56
+
+@mixin flex__jcsb
+    display: flex
+    justify-content: space-between
+
+/* header block
+.header
+    background: $colorDark
+    color: #fff
+    padding: 30px 0
+    border-bottom: 1px solid #8D8C8F
+
+    &__inner
+        @include flex__jcsb
+
+    &__logo
+        margin-right: 26px
+        padding: 1px 0
+
+        img
+            height: 22px
+            width: auto
+
+    &__nav
+        display: flex
+
+        &-link
+            margin: 0 26px
+            font-size: 18px
+            line-height: 24px
+
+        &-icon
+            margin-left: 26px
+            padding: 3px
+            width: 24px
+            height: 24px
+
+            img
+                width: 18px
+                height: 18px
+
+/* welcome block
+.welcome
+    background: $colorDark
+    overflow-x: hidden
+    padding: 20px 0 120px 80px
+    color: #fff
+    @include flex__jcsb
+    position: relative
+
+    &__info
+        padding-top: 80px
+        width: 40%
+        position: relative
+        z-index: 30
+
+    &__textblock
+        padding-left: 60px
+
+    &__logo
+        font-family: $fontReality
+        text-align: right
+        font-size: 105px
+        line-height: 1
+        text-transform: uppercase
+
+        &-description
+            font-size: 50px
+            margin-top: -5px
+
+    .text
+        margin-top: 40px
+        max-width: 388px
+
+    .button__inner
+        margin-top: 40px
+
+    &::after
+        content: ""
+        display: block
+        width: 10%
+        height: 10%
+        position: absolute
+        right: -20px
+        bottom: 40px
+        z-index: 22
+        background-image: url(/images/welcome/welcome__bg.svg)
+        background-repeat: no-repeat
+        background-position: right 0 bottom 0
+    /* slider block
+    .slider
+        width: 60%
+        position: relative
+
+        &__image-inner
+            position: relative
+
+            &::after
+                content: ""
+                display: block
+                width: 80%
+                height: 85%
+                position: absolute
+                right: 0
+                bottom: 0
+                background-color: #2F2E30
+                z-index: 25
+
+
+        &__img
+            margin-left: -10%
+            min-width: 110%
+            height: auto
+            transition: .5s linear
+            position: relative
+            z-index: 35
+
+        &__img:not(:first-child)
+            display: none
+
+        &__bar
+            width: 20px
+            height: 2px
+            background: rgba(255, 255, 255, 0.2)
+            margin-right: 10px
+
+            &--active
+                width: 40px
+                background: rgba(255, 255, 255, 0.5)
+
+            &-inner
+                position: absolute
+                left: 20%
+                bottom: -60px
+                display: flex
+                z-index: 26
+
+    &__inner
+        padding-top: 80px
+        display: flex
+
+        /* social block
+        .social
+            min-width: 20px
+
+            &__link:not(:first-child)
+                margin-top: 12px
+
+            &__link
+                padding: 5px
+                border: 1px solid transparent
+                border-radius: 50%
+
+                &:hover
+                    border-color: #fff
+
+
+
+
+        .video__inner
+            margin-left: 160px
+            width: 152px
+            height: 122px
+
+            iframe
+                width: 100%
+                height: 100%
+
+
