@@ -1,6 +1,7 @@
 include blocks/mixin
 include blocks/header
 include blocks/welcome
+include blocks/categories
 include blocks/footer
 
 doctype html
@@ -25,6 +26,7 @@ html(lang="ru")
         .page
             +header
             +welcome
+            +categories
             +footer
         script (src="js/main.min.js")
 

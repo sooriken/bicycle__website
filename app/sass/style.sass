@@ -173,3 +173,93 @@ $colorRed:  #EB4C56
                 height: 100%
 
 
+// categories block
+.categories
+    padding: 120px 0
+
+    &__header
+        padding: 0 160px 0 20px
+        @include flex__jcsb
+
+    &__title
+        font-family: $fontButler
+        font-weight: 500
+        font-size: 64px
+        line-height: 140%
+        max-width: 520px
+
+    &__inner
+        margin-top: 8px
+
+    &__suptitle
+        font-family: $fontButler
+        font-weight: 500
+        font-size: 28px
+        line-height: 140%
+        position: relative
+        z-index: 28
+
+        &::before
+            content: ""
+            display: block
+            width: 100%
+            height: 4px
+            position: absolute
+            bottom: 4px
+            left: 0
+            background-color: $colorRed
+            z-index: -1
+
+
+    &__name
+        margin-top: 16px
+        font-family: $fontLota
+        font-size: 18px
+        line-height: 140%
+        color: #2F2E30
+
+    // slider block
+    .slider
+        @include flex__jcsb
+        margin-top: 120px
+
+        &__inner
+            width: calc(45% - 25px)
+            margin-right: 25px
+
+        &__buttons-inner
+            @include flex__jcsb
+            margin-top: 32px
+            font-size: 20px
+            line-height: 160%
+            position: relative
+            z-index: 27
+
+            &::after
+                content: ""
+                display: block
+                width: 100%
+                height: 4px
+                position: absolute
+                bottom: 50%
+                left: 0
+                background-color: $colorRed
+                z-index: 26
+
+        &__button
+            position: relative
+            z-index: 27
+
+            &--prev
+                padding-right: 24px
+
+            &--next
+                padding-left: 24px
+
+        &__number
+            padding: 0 12px
+
+
+        &__imageblock
+            width: calc(55% - 25px)
+            margin-left: 25px
