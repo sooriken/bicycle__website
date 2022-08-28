@@ -1,0 +1,13 @@
+include mixin
+
+mixin products
+    .products
+        .products__header
+            .title
+            .text
+        .products__inner
+            +productCard('Road helmet ','$60')
+            +productCard('Bike water bottle','$60')
+        .products__inner.products__inner--small
+            +productCard('Bike pump','$80')
+            +productCard('Tire repair kit','$120')

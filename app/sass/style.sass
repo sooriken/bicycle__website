@@ -181,11 +181,7 @@ $colorRed:  #EB4C56
         padding: 0 160px 0 20px
         @include flex__jcsb
 
-    &__title
-        font-family: $fontButler
-        font-weight: 500
-        font-size: 64px
-        line-height: 140%
+    .title
         max-width: 520px
 
     &__inner
@@ -233,31 +229,33 @@ $colorRed:  #EB4C56
             font-size: 20px
             line-height: 160%
             position: relative
-            z-index: 27
 
             &::after
                 content: ""
                 display: block
                 width: 100%
-                height: 4px
+                height: 1px
                 position: absolute
                 bottom: 50%
                 left: 0
-                background-color: $colorRed
+                background-color: #000
                 z-index: 26
 
         &__button
-            position: relative
             z-index: 27
+            background: #f8f8f8
 
             &--prev
                 padding-right: 24px
 
             &--next
                 padding-left: 24px
+                font-size: 20px
 
         &__number
             padding: 0 12px
+            background: #f8f8f8
+            z-index: 27
 
 
         &__imageblock

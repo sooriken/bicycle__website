@@ -56,6 +56,12 @@ button{
     cursor: pointer;
 }
 
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .page {
     background: #f8f8f8;
     color: #000;
@@ -140,4 +146,11 @@ button{
     font-weight: 300;
     font-size: 22px;
     line-height: 150%;
+}
+
+.title{
+    font-family: 'Butler';
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 140%;
 }
