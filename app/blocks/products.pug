@@ -2,12 +2,15 @@ include mixin
 
 mixin products
     .products
-        .products__header
-            .title
-            .text
-        .products__inner
-            +productCard('Road helmet ','$60')
-            +productCard('Bike water bottle','$60')
-        .products__inner.products__inner--small
-            +productCard('Bike pump','$80')
-            +productCard('Tire repair kit','$120')
+        .container
+            .products__header
+                .title Explore Our Product
+                .text Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            .products__inner
+                +productCard('helmet', 'Road helmet', '$60')
+                +productCard('bottle', 'Bike water bottle', '$60')
+            .products__inner.products__inner--small
+                +productCard('pump', 'Bike pump', '$80')
+                +productCard('repair-kit', 'Tire repair kit', '$120')
+            .button__inner
+                a.button.button--simple(href="#") Explore All

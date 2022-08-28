@@ -185,7 +185,7 @@ $colorRed:  #EB4C56
         max-width: 520px
 
     &__inner
-        margin-top: 8px
+        margin: auto 0
 
     &__suptitle
         font-family: $fontButler
@@ -261,3 +261,62 @@ $colorRed:  #EB4C56
         &__imageblock
             width: calc(55% - 25px)
             margin-left: 25px
+
+// products block
+.products
+    padding: 80px 0 50px
+    background: #fff
+
+    &__header
+        @include flex__jcsb
+        margin-bottom: 60px
+
+        .title
+            max-width: 360px
+            font-size: 54px
+            line-height: 150%
+            color: #1B1A1F
+
+        .text
+            margin: auto 0
+            padding-right: 80px
+            max-width: 480px
+
+    &__inner
+        @include flex__jcsb
+        margin-top: 60px
+
+        .product
+            height: 100%
+            width: calc(55% - 25px)
+            margin-left: 25px
+            position: relative
+            display: flex
+            flex-direction: column
+
+            &:first-child
+                width: calc(45% - 25px)
+                margin: 0 25px 0 0
+
+            &__info
+                position: absolute
+                left: 40px
+                bottom: 30px
+                font-size: 22px
+                line-height: 33px
+
+            &__button
+                position: absolute
+                top: 40px
+                right: 40px
+
+            &__price
+                margin-top: 10px
+                font-weight: 600
+
+        &--small
+            padding-left: 160px
+
+    .button__inner
+        justify-content: center
+        margin-top: 50px
