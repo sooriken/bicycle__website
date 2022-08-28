@@ -1,8 +1,8 @@
 mixin productCard(productImage, productName, productPrice)
     .product
-        img.product__image(src=`/images/products/` + productImage + '.jpg')
+        img.product__image(src=`images/products/` + productImage + '.jpg')
         .product__info
             .product__name= productName
             .product__price= productPrice
         a.product__button(href="#")
-            img(src='/images/products/button__icon.svg')
+            img(src='images/products/button__icon.svg')
