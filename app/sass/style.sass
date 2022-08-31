@@ -320,3 +320,137 @@ $colorRed:  #EB4C56
     .button__inner
         justify-content: center
         margin-top: 50px
+
+// partners block
+.partners
+    @include flex__jcsb
+    min-height: 48px
+    padding: 100px 140px
+
+    &__image--discord
+        padding: 8px
+
+    &__img
+        height: 100%
+        width: auto
+
+// ad inner
+.ad
+    padding: 20px 0 100px
+
+    &__inner
+        @include flex__jcsb
+
+    &__image
+        width: calc(50% - 60px)
+
+    &__img
+        width: 100%
+        height: auto
+
+    &__textblock
+        width: calc(50% - 60px)
+
+        &-title
+            padding: 30px 0
+            font-family: $fontButler
+            font-size: 40px
+            line-height: 160%
+            font-weight: 500
+            color: $colorDark
+
+        &-text
+            max-width: 480px
+            margin-top: 20px
+            font-family: $fontLota
+            font-size: 22px
+            line-height: 150%
+            font-weight: 300
+            color: #2F2E30
+
+        &-button
+            margin-top: 16px
+            font-family: $fontLota
+            line-height: 150%
+            text-decoration: underline
+            color: #2F2E30
+
+    &__services-inner
+        @include flex__jcsb
+        margin-top: 90px
+
+    &__service
+        padding: 0 50px
+        flex-grow: 1
+
+        &:first-child
+            padding-left: 0
+
+        &:last-child
+            padding-right: 0
+
+        &-title
+            font-family: $fontButler
+            font-weight: 500
+            font-size: 28px
+            line-height: 160%
+            color: $colorDark
+
+        &-text
+            margin-top: 24px
+            font-family: $fontLota
+            font-weight: 300
+            font-size: 22px
+            line-height: 150%
+            color: #2F2E30
+
+// footer block
+.footer
+    padding: 100px 180px 120px
+    background: $colorDark
+    color: #fff
+    @include flex__jcsb
+
+    &__connect
+        width: 50%
+        max-width: 300px
+        margin-right: 160px
+
+        &-title
+            font-family: $fontLota
+            font-size: 24px
+            line-height: 125%
+
+    .textform
+        padding-right: 40px
+
+    .social
+        display: flex
+        margin-top: 46px
+
+        &__link
+            margin-right: 16px
+
+        &__img
+            width: 32px
+            height: 32px
+
+    &__nav
+        &-inner
+            width: 25%
+            padding-left: 80px
+
+        &-title
+            font-family: $fontLota
+            font-size: 20px
+            line-height: 150%
+
+        &-link
+            margin-top: 12px
+            font-family: $fontLota
+            font-weight: 300
+            font-size: 16px
+            line-height: 162%
+
+        &-links
+            margin-top: 24px

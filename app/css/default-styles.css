@@ -111,12 +111,19 @@ img{
     line-height: 165%;
 }
 
+.button--simple:hover{
+    color: #fff;
+    background: #1B1A1F;
+}
+
 .form {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    position: relative;
+    margin-top: 20px;
 }
 
 .textform {
@@ -125,22 +132,27 @@ img{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: #191919;
-    border: 1px solid #191919;
-    border-radius: 6px;
+    background: #49484c;
+    border: 1px solid #49484c;
     color: #fff;
-    font-size: 2rem;
-    line-height: 120%;
-    padding: 28px 20px;
-    margin-top: 20px;
+    font-size: 1.33rem;
+    line-height: 24px;
+    padding: 8px 12px;
+    font-family: 'Lota Grotesque';
+    font-weight: 300;
 }
-
-
 
 .textform::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.textform__img {
+    position: absolute;
+    height: 16px;
+    width: auto;
+    top: 14px;
+    right: 12px;
+}
 .text{
     font-family: 'Lota Grotesque';
     font-weight: 300;
